@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* font-family: "Poppins", serif; */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", serif;
+}
+
+.navbar {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+  color: #3a3a3a;
+}
+
+.logo h2 {
+  font-size: 1.5rem;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar ul li {
+  list-style: none;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #3a3a3a;
+}
+
+.navbar ul li a img {
+  width: 30px;
+}
+
+.navbar > .mobile-menu {
+  display: none;
+}
+
+.mobile-cart {
+	display: none;
+}
+
+@media screen and (max-width: 576px) {
+  .navbar > .mobile-menu {
+    display: inline;
+  }
+
+  .mobile-menu img {
+    width: 50px;
+  }
+
+  .nav-menu {
+    display: none;
+  }
+
+  .logo h2 {
+    text-align: center;
+  }
+
+  .mobile-cart {
+	display: block;
+}
+}
+
+@media screen and (min-width: 992px) {
+}
