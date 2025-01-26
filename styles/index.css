@@ -119,6 +119,21 @@ body {
 .banner-circle img {
   width: 100%;
 }
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.vendor-logo {
+  display: flex;
+  gap: 40px;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  border-top: 1px solid #b8b8b85f;
+  border-bottom: 1px solid #b8b8b85f;
+  padding: 30px 0;
+}
 @media screen and (max-width: 576px) {
   .navbar > .mobile-menu {
     display: inline;
@@ -149,6 +164,10 @@ body {
 
   .banner-button button {
     margin: 0 auto;
+  }
+
+  .vendor-logo {
+    padding: 0 20px;
   }
 }
 
