@@ -209,6 +209,43 @@ main {
   width: 30px;
 }
 
+.feature-product {
+  display: flex;
+  justify-content: space-around;
+  gap: 50px;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.feature-text h2 {
+  font-size: 2.4rem;
+  color: #0a0826;
+  margin-bottom: 20px;
+}
+
+.feature-text p {
+  font-size: 1rem;
+  color: #6c6c6c;
+  margin-bottom: 20px;
+}
+
+.feature-button button {
+  background-color: #e02c6d;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  border: none;
+  gap: 10px;
+}
+
+.feature-button button img {
+  width: 30px;
+}
+
 @media screen and (max-width: 576px) {
   .navbar > .mobile-menu {
     display: inline;
@@ -247,6 +284,18 @@ main {
 
   .product-display-grid {
     grid-template-columns: 1fr;
+  }
+
+  .feature-product {
+    flex-direction: column-reverse;
+  }
+
+  .feature-text {
+    max-width: 400px;
+    text-align: center;
+  }
+  .feature-button button {
+    margin: 0 auto;
   }
 }
 
