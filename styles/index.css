@@ -51,9 +51,74 @@ body {
 }
 
 .mobile-cart {
-	display: none;
+  display: none;
 }
 
+.banner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 100px;
+  margin-bottom: 100px;
+}
+
+.banner-text {
+  max-width: 500px;
+}
+
+.banner-title {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: #3a3a3a;
+  margin-bottom: 10px;
+  line-height: 4rem;
+}
+
+.banner-details {
+  font-size: 0.9rem;
+  color: gray;
+  margin-bottom: 20px;
+}
+
+.banner-button button img {
+  width: 20%;
+}
+
+.banner-button button {
+  font-size: 1rem;
+  font-weight: 700;
+  background-color: #e02c6d;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: none;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+
+.banner-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner-circle {
+  /* width: 100%; */
+  background-image: url("../images/Circle\ design.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.banner-circle img {
+  width: 100%;
+}
 @media screen and (max-width: 576px) {
   .navbar > .mobile-menu {
     display: inline;
@@ -72,8 +137,19 @@ body {
   }
 
   .mobile-cart {
-	display: block;
-}
+    display: block;
+  }
+
+  .banner {
+    flex-direction: column-reverse;
+  }
+  .banner-text {
+    text-align: center;
+  }
+
+  .banner-button button {
+    margin: 0 auto;
+  }
 }
 
 @media screen and (min-width: 992px) {
